@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #8dcb11 0%, #9f25fc 100%);
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #9f25fc;
+            box-shadow: 0 0 5px rgba(159, 37, 252, 0.5);
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #9f25fc;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #7a1cc3;
+        }
+
+        .extra-links {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .extra-links a {
+            text-decoration: none;
+            color: #9f25fc;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .extra-links a:hover {
+            color: #7a1cc3;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar a.logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .navlink {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .navlink a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navlink a:hover {
+            color: #9f25fc;
+        }
+
+        .navlink button {
+            padding: 5px 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #9f25fc;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .navlink button:hover {
+            background-color: #7a1cc3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <div class="navlink">
+            <a href="sign.html">sign in </a>
+            <a href="login.html">Login</a>
+                        <a href="index.html">home</a>
+                         <a href="about page.html">about us</a>
+            <a href="service page.html">service</a>
+            <button class="nav">ClassMe</button>
+        </div>
+    </nav>
+
+    <!-- Sign In Form -->
+    <div class="container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="extra-links">
+             
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
